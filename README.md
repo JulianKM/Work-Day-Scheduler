@@ -1,4 +1,4 @@
-# Work-Day-Scheduler
+## Work-Day-Scheduler
 
 # Description
 This site can allow users to save events for each hour of the day. 
