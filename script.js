@@ -61,10 +61,43 @@ if (todayHour === 12) {
 var button = $(".saveBtn")
 button.on("click", function(event){
   var text = $(event.target).siblings(".description").val()
+  var id = $(event.target).parent().attr("id")
   console.log(text)
-  localStorage.setItem("9am", text)
+  localStorage.setItem(id, text)
 })
-
-var storage = localStorage.getItem("9am")
+// loop through all hours or copy and paste every hour
+var storage = localStorage.getItem("hour-9")
 var textarea = $("#hour-9").children(".description").val(storage)
+console.log(textarea)
+
+var storage = localStorage.getItem("hour-10")
+var textarea = $("#hour-10").children(".description").val(storage)
+console.log(textarea)
+
+var storage = localStorage.getItem("hour-11")
+var textarea = $("#hour-11").children(".description").val(storage)
+console.log(textarea)
+
+var storage = localStorage.getItem("hour-12")
+var textarea = $("#hour-12").children(".description").val(storage)
+console.log(textarea)
+
+var storage = localStorage.getItem("hour-13")
+var textarea = $("#hour-13").children(".description").val(storage)
+console.log(textarea)
+
+var storage = localStorage.getItem("hour-14")
+var textarea = $("#hour-14").children(".description").val(storage)
+console.log(textarea)
+
+var storage = localStorage.getItem("hour-15")
+var textarea = $("#hour-16").children(".description").val(storage)
+console.log(textarea)
+
+var storage = localStorage.getItem("hour-16")
+var textarea = $("#hour-16").children(".description").val(storage)
+console.log(textarea)
+
+var storage = localStorage.getItem("hour-17")
+var textarea = $("#hour-17").children(".description").val(storage)
 console.log(textarea)
