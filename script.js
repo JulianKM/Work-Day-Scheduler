@@ -1,4 +1,4 @@
-currentDay = document.getElementById('currentDay')
+var currentDay = document.getElementById("currentDay")
 currentDay.textContent = dayjs().format("dddd, MMMM D, YYYY")
 
 var todayHour = dayjs().format("HH");
@@ -31,31 +31,6 @@ if (todayHour > 12) {
       parentEl.classList.add("future");
     }
   }
-}
-if (todayHour < 12) {
-  for (var h = 0; h < hourPM.length; h++) {
-    parentEl = hourPM[h].parentElement;
-    parentEl.classList.add("future");
-  }
-  for (var j = 0; j < hourAM.length; j++) {
-    divTextHour = Number(hourAM[j].innerText.replace("AM", ""));
-    if (divTextHour < todayHour) {
-      parentEl = hourAM[j].parentElement;
-      parentEl.classList.add("past");
-    }
-    if (divTextHour > todayHour) {
-      parentEl = hourAM[j].parentElement;
-      parentEl.classList.add("future");
-    }
-    if (divTextHour === todayHour) {
-      parentEl = hourAM[j].parentElement;
-      parentEl.classList.add("present");
-    }
-  }
-}
-if (todayHour === 12) {
-  parentEl = hourPM[0].parentElement;
-  parentEl.classList.add("present");
 }
 
 var button = $(".saveBtn")
