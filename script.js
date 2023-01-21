@@ -1,5 +1,5 @@
 currentDay = document.getElementById('currentDay')
-currentDay.textContent = dayjs().format("MMMM, dddd, D")
+currentDay.textContent = dayjs().format("dddd, MMMM D, YYYY")
 
 var todayHour = dayjs().format("HH");
 var hourAM = $(".am");
